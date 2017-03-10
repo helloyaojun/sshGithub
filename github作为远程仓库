@@ -1,17 +1,20 @@
+配置好ssh key之后
+
+用户helloyaojun在github建sshGithub的项目
+$ curl -u 'helloyaojun' https://api.github.com/user/repos -d '{"name":"sshGithub"}'
+Enter host password for user 'helloyaojun':
+
 $ cd /Users/yaojun/Desktop/
 $ mkdir sshGithub
 $ cd sshGithub
 $ touch github作为远程仓库
+
 $ git init
 $ git add github作为远程仓库
 $ git commit -m "first commit"
 
-$ curl -u 'helloyaojun' https://api.github.com/user/repos -d '{"name":"sshGithub"}'
-Enter host password for user 'helloyaojun':
 $ git remote add yaojun git@github.com:helloyaojun/sshGithub.git
-
 $ git push -u yaojun master
-
 
 $ git status
 $ git add --all
