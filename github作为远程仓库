@@ -12,18 +12,8 @@ Enter host password for user 'helloyaojun':
 $ git remote add yaojun git@github.com:helloyaojun/sshGithub.git
 $ git push -u yaojun master
 
-Counting objects: 3, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 274 bytes | 0 bytes/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To git@github.com:helloyaojun/sshGithub.git
- * [new branch]      master -> master
-Branch master set up to track remote branch master from orign.
 
-$ git commit -m "second commit"
-[master dcd94de] second commit
- 1 file changed, 23 insertions(+), 4 deletions(-)
- rewrite github作为远程仓库 (98%)
 $ git status
+$ git add --all
+$ git commit -m “second commit"
 $ git push yaojun -u master
