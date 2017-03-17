@@ -10,10 +10,11 @@ $ cd sshGithub
 $ touch github作为远程仓库
 
 $ git init
+$ git remote add yaojun git@github.com:helloyaojun/sshGithub.git
+
 $ git add github作为远程仓库
 $ git commit -m "first commit"
 
-$ git remote add yaojun git@github.com:helloyaojun/sshGithub.git
 $ git push -u yaojun master
 
 $ git status
